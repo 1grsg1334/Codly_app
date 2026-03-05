@@ -42,13 +42,6 @@
       </svg>
       Стоп
     </button>
-    <button class="tb-btn" id="btn-reset" title="Сброс переменных">
-      <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
-        <path d="M12 7A5 5 0 112 7"/>
-        <path d="M12 3v4h-4"/>
-      </svg>
-      Сброс
-    </button>
     <button class="tb-btn tb-danger" id="btn-delete-all" title="Удалить все блоки">
       <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
         <path d="M2 4h10"/>
@@ -67,16 +60,12 @@
   <div id="layout">
     <div id="code-panel">
       <div class="panel-header">
-        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 2L1 6l3 4"/>
-          <path d="M8 2l3 4-3 4"/>
-        </svg>
         Сгенерированный код
       </div>
       <pre id="code-output">
         <span class="code-ph">
-          // Добавьте блоки на холст —
-          // здесь появится псевдокод…
+            //Добавьте блоки на холст — 
+            //здесь появится псевдокод…
         </span>
       </pre>
     </div>
@@ -109,10 +98,6 @@
         <button class="cc-btn" id="cc-zoom-in" title="Увеличить (Ctrl++)">+</button>
         <div class="cc-sep"></div>
         <button class="cc-btn" id="cc-fit" title="Подогнать">⊡</button>
-        <button class="cc-btn" id="cc-reset-view" title="Сбросить вид">⌖</button>
-      </div>
-      <div id="canvas-hints">
-        Колесо: прокрутка &nbsp;|&nbsp; Ctrl+колесо: масштаб &nbsp;|&nbsp; Пробел+мышь: перемещение &nbsp;|&nbsp; Shift+колесо: горизонтально
       </div>
     </div>
     <aside id="sidebar" class="open">
