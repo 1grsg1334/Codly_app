@@ -1,0 +1,87 @@
+:root {
+  --bg0: #070A0E;
+  --bg1: #0C1018;
+  --bg2: #111722;
+  --bg3: #18202E;
+  --bg4: #1E2A3D;
+  --bg5: #243349;
+
+  --border0: #161E2D;
+  --border1: #1E2A3D;
+  --border2: #283B55;
+  --border3: #344d6e;
+
+  --text0: #EDF2FF;
+  --text1: #8DA4C4;
+  --text2: #4A6080;
+  --text3: #2A3F58;
+
+  --blue: #4A9EFF;
+  --blue-a: rgba(74,158,255,.15);
+  --green: #3DD68C;
+  --green-a: rgba(61,214,140,.12);
+  --amber: #F5B731;
+  --amber-a: rgba(245,183,49,.12);
+  --red: #F05252;
+  --red-a: rgba(240,82,82,.12);
+  --purple: #8B7CF6;
+  --cyan: #22D3EE;
+
+  --col-var: #7C6FF7;
+  --col-arr: #A855F7;
+  --col-assign: #3DD68C;
+  --col-aarr: #06B6D4;
+  --col-if: #F5B731;
+  --col-while: #F05252;
+  --col-for: #FB923C;
+
+  --r: 10px;
+  --rl: 14px;
+
+  --ease: cubic-bezier(.4,0,.2,1);
+  --spring: cubic-bezier(.34,1.56,.64,1);
+}
+
+/* Reset & base */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background: var(--bg0);
+  color: var(--text0);
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border2);
+  border-radius: 3px;
+}
+
+/* Utility */
+
+.tb-spacer {
+  flex: 1;
+}
