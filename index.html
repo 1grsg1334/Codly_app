@@ -109,9 +109,6 @@
       <div class="sidebar-scroll">
         <div class="sb-group">
           <div class="sb-group-label">
-            <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-              <rect x=".5" y=".5" width="9" height="9" rx="2" stroke="currentColor"/>
-            </svg>
             <span>Переменные</span>
           </div>
           <div class="palette-item" draggable="true"
@@ -119,8 +116,7 @@
                data-tip="Объявить int|Создаёт int переменные (= 0). Несколько через запятую.|int a, b, c">
             <div class="pi-dot" style="--c:var(--col-var)"></div>
             <div class="pi-labels">
-              <span class="pi-name">Объявить int</span>
-              <span class="pi-code">int a, b, c</span>
+              <span class="pi-name">int</span>
             </div>
           </div>
           <div class="palette-item" draggable="true"
@@ -128,8 +124,7 @@
                data-tip="Объявить int = …|Объявляет переменную и сразу присваивает значение.|int a = 5 + b">
             <div class="pi-dot" style="--c:var(--col-var)"></div>
             <div class="pi-labels">
-              <span class="pi-name">Объявить int = …</span>
-              <span class="pi-code">int a = expr</span>
+              <span class="pi-name">Объявить int</span>
             </div>
           </div>
           <div class="palette-item" draggable="true"
@@ -138,15 +133,11 @@
             <div class="pi-dot" style="--c:var(--col-arr)"></div>
             <div class="pi-labels">
               <span class="pi-name">Объявить массив</span>
-              <span class="pi-code">int arr[N]</span>
             </div>
           </div>
         </div>
         <div class="sb-group">
           <div class="sb-group-label">
-            <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-              <path d="M2 5h6M5 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
             <span>Операции</span>
           </div>
           <div class="palette-item" draggable="true"
@@ -155,7 +146,6 @@
             <div class="pi-dot" style="--c:var(--col-assign)"></div>
             <div class="pi-labels">
               <span class="pi-name">Присвоить</span>
-              <span class="pi-code">a = expr</span>
             </div>
           </div>
           <div class="palette-item" draggable="true"
@@ -163,16 +153,12 @@
                data-tip="Запись в массив|Записывает значение в ячейку массива по индексу.|arr[i] = arr[j] + 1">
             <div class="pi-dot" style="--c:var(--col-aarr)"></div>
             <div class="pi-labels">
-              <span class="pi-name">Массив arr[i] =</span>
-              <span class="pi-code">arr[i] = expr</span>
+              <span class="pi-name">Массив arr[i]</span>
             </div>
           </div>
         </div>
         <div class="sb-group">
           <div class="sb-group-label">
-            <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-              <path d="M2 2h6v2L5 7 2 4V2z" stroke="currentColor"/>
-            </svg>
             <span>Управление</span>
           </div>
           <div class="palette-item" draggable="true"
@@ -180,8 +166,7 @@
                data-tip="If|Выполняет блок если условие истинно. Поддерживает AND, OR, NOT, скобки.|if (a > 0 AND b != 0)">
             <div class="pi-dot" style="--c:var(--col-if)"></div>
             <div class="pi-labels">
-              <span class="pi-name">If</span>
-              <span class="pi-code">if (cond) { … }</span>
+              <span class="pi-name">if</span>
             </div>
           </div>
           <div class="palette-item" draggable="true"
@@ -189,8 +174,7 @@
                data-tip="If - Else|Ветка «тогда» и «иначе». Поддерживает AND, OR, NOT, скобки.|if (a > b) … else …">
             <div class="pi-dot" style="--c:var(--col-if)"></div>
             <div class="pi-labels">
-              <span class="pi-name">If - Else</span>
-              <span class="pi-code">if … else …</span>
+              <span class="pi-name">if-else</span>
             </div>
           </div>
           <div class="palette-item" draggable="true"
@@ -198,8 +182,7 @@
                data-tip="While|Повторяет тело пока условие истинно. Поддерживает AND, OR, NOT.|while (i < n)">
             <div class="pi-dot" style="--c:var(--col-while)"></div>
             <div class="pi-labels">
-              <span class="pi-name">While</span>
-              <span class="pi-code">while (cond) { … }</span>
+              <span class="pi-name">while</span>
             </div>
           </div>
           <div class="palette-item" draggable="true"
@@ -207,45 +190,36 @@
                data-tip="For (C++ стиль)|Init — один раз. Cond — перед каждой итерацией. Step — после каждой итерации.|for (i=0; i&lt;n; i=i+1)">
             <div class="pi-dot" style="--c:var(--col-for)"></div>
             <div class="pi-labels">
-              <span class="pi-name">For</span>
-              <span class="pi-code">for (init; cond; step)</span>
+              <span class="pi-name">for</span>
             </div>
           </div>
         </div>
         <div class="sb-group">
           <div class="sb-group-label">
-            <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-              <circle cx="5" cy="5" r="4" stroke="currentColor"/>
-              <path d="M5 3v2.5L7 7" stroke="currentColor" stroke-linecap="round"/>
-            </svg>
             <span>Примеры</span>
           </div>
           <button class="example-btn" data-example="bubble">
             <span class="ex-icon">🫧</span>
             <div class="ex-labels">
               <span class="ex-name">Сортировка пузырьком</span>
-              <span class="ex-desc">Сортирует массив [5,3,8,1,4]</span>
             </div>
           </button>
           <button class="example-btn" data-example="findmax">
             <span class="ex-icon">🔍</span>
             <div class="ex-labels">
               <span class="ex-name">Поиск максимума</span>
-              <span class="ex-desc">Находит max в массиве [3,9,2,7,5,11]</span>
             </div>
           </button>
           <button class="example-btn" data-example="sum">
             <span class="ex-icon">Σ</span>
             <div class="ex-labels">
               <span class="ex-name">Сумма массива</span>
-              <span class="ex-desc">Суммирует элементы [10,20,30,40,50]</span>
             </div>
           </button>
           <button class="example-btn" data-example="for_demo">
             <span class="ex-icon">🔄</span>
             <div class="ex-labels">
-              <span class="ex-name">Демо For-цикла</span>
-              <span class="ex-desc">Квадраты 0..4, затем их сумма</span>
+              <span class="ex-name">Демо for-цикла</span>
             </div>
           </button>
         </div>
