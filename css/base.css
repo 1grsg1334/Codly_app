@@ -42,8 +42,6 @@
   --spring: cubic-bezier(.34,1.56,.64,1);
 }
 
-/* Reset & base */
-
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -64,8 +62,6 @@ body {
   user-select: none;
 }
 
-/* Scrollbar */
-
 ::-webkit-scrollbar {
   width: 5px;
   height: 5px;
@@ -79,8 +75,6 @@ body {
   background: var(--border2);
   border-radius: 3px;
 }
-
-/* Utility */
 
 .tb-spacer {
   flex: 1;
